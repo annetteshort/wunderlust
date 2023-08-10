@@ -49,3 +49,70 @@ table {
 	border-spacing: 0;
 }
 /*End of css reset*/
+
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
+/*font-family: 'Molle', cursive; --> h1, h2, h3 
+font-family: 'Montserrat', sans-serif;--> h4, p, q, small, nav, button, form
+*/
+
+/*Root to keep track of brand colors */
+:root {
+    --yellow: #F6D64A;
+    --teal: #55BCD5; 
+    --purple: #9B26B0;
+    --blue: #499BD2;
+    --dark-gray: #222222;
+    --light-gray: #EAEAEA;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+h1, h2, h3 {
+    font-family: 'Molle', cursive;
+}
+h4, p, q, small, nav, button, form {
+    font-family: 'Montserrat', sans-serif;
+}
+#skip {
+    position: absolute;
+    left: -10000px;
+    overflow: hidden;
+}
+#skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+header {
+    background: linear-gradient(0deg, rgb(255,255,255) 5%, rgb(85,188,213) 100%); 
+
+}
+body {
+    background-color: var(--white);
+}
+#plan {
+    background-color: var(--yellow);
+}
+#plan h3, h4 {
+    text-align: center;
+}
+
+#plan img {
+    background-color: var(--teal);
+    display: grid;
+    margin: 0 auto;
+    border-radius: 1em;
+    padding: 50px;
+    border:3px solid var(--white);
+}
+#about {
+    background-color: var(--blue);
+}
+#about h3, h4, p {
+    text-align: center;
+}
+#about img {
+    display: grid;
+    margin: 0 auto;
+    border-radius: 1em;
+    padding: 50px;
+}
