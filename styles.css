@@ -176,6 +176,7 @@ form {
 	color: var(--black);
 	font-size: 1.1em;
 }
+
 input[type=text] {
     color: var(--purple);
 }
