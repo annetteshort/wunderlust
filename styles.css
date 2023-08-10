@@ -66,12 +66,14 @@ font-family: 'Montserrat', sans-serif;--> h4, p, q, small, nav, button, form
     --white: #FFFFFF;
     --black: #000000;
 }
+/*fonts per branding*/
 h1, h2, h3 {
     font-family: 'Molle', cursive;
 }
 h4, p, q, small, nav, button, form {
     font-family: 'Montserrat', sans-serif;
 }
+/*css for skip to content*/
 #skip {
     position: absolute;
     left: -10000px;
@@ -82,20 +84,61 @@ h4, p, q, small, nav, button, form {
     width: auto;
     height: auto;
 }
+
+/**/
 header {
     background: linear-gradient(0deg, rgb(255,255,255) 5%, rgb(85,188,213) 100%); 
+}
+#intro {
+    text-align: left;
+    display: grid; 
+    grid-template-columns: 1fr;
+    gap: 1em;
+    place-self: center;
+}
 
+/*Menu for nav*/
+#menu-toggle input {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -7px;
+    left: -5px;  
+    padding: 0;
+    cursor: pointer;  
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */  
+    -webkit-touch-callout: none;
+} 
+/*end of menu*/
+
+/*setting heading sizes*/
+h1 { 
+    font-size: 50px;
 }
-body {
-    background-color: var(--white);
+h2 {
+    font-size: 30px;
 }
+/*hiding 'main navigation'*/
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+#img-grid {
+    /*take out??*/
+}
+/*Plan your trip*/
 #plan {
     background-color: var(--yellow);
 }
 #plan h3, h4 {
     text-align: center;
 }
-
 #plan img {
     background-color: var(--teal);
     display: grid;
@@ -104,6 +147,15 @@ body {
     padding: 50px;
     border:3px solid var(--white);
 }
+/*testimonials*/
+#testimonials h3 {
+    text-align: center;
+}
+#testimonials img{
+    display: flex;
+    justify-content: center;
+}
+/*about your visit*/
 #about {
     background-color: var(--blue);
 }
@@ -115,4 +167,27 @@ body {
     margin: 0 auto;
     border-radius: 1em;
     padding: 50px;
+}
+form {
+    display: block;
+	width: 300px;
+	padding: 1em;
+	margin: 0 auto;
+	color: var(--black);
+	font-size: 1.1em;
+}
+input[type=text] {
+    color: var(--purple);
+}
+.required{
+    display: inline-block;
+    color: var(--purple);
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 960px) {
+    
 }
